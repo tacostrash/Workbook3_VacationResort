@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Page</title>
+  </head>
+  <body>
+    <form>
+      <!-- Name Input -->
+      Name:
+      <input type="text" id="name" name="name" placeholder="Name" />
+      <br />
+      <br />
+      Email:
+      <input type="text" id="email" name="email" placeholder="Email" />
+      <br />
+      <br />
+      <label for="checkInDate">Select Check-in Date:</label>
+      <input type="date" id="checkInDate" />
+      <br />
+      <br />
+      <!-- Number of Nights -->
+      Number of Nights :
+      <select name="nights">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+      </select>
+      <br />
+      <br />
+      <!-- Room  -->
+      Select Room
+      <br />
+      <br />
+      <legend>
+        <input type="radio" name="room" id="queen" value="150" checked />
+        <label for="queen">Queen</label>
+
+        <input type="radio" name="room" id="king" value="150" />
+        <label for="king">King</label>
+
+        <input type="radio" name="room" id="twoBedroom" value="210" />
+        <label for="twoBedroom">2-Bedroom Suite</label>
+      </legend>
+      <br />
+      <br />
+      <!-- Number of Guest -->
+      Number of Adults
+      <select name="adults" id = "adults"/>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      Number of Children
+      <select name="children" id = "children"/>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+
+      <br />
+      <br />
+      <!-- Discounts -->
+      <label>Discount:</label><br> <br>
+
+      <input type="radio" id="none" name="discount" value="none"> None <br>
+
+      <input type="radio" id="aaa" name="discount" value="aaa"> AAA/Senior (10%) <br>
+
+      <input type="radio" id="military" name="discount" value="military"> Military (20%)
+
+      <br />
+      <br />
+      <!-- Button -->
+      <input type="button" value="Estimate Total Cost" id="submit-btn" />
+      <br />
+      <br />
+      <!-- Cost Details -->
+      Cost Of Room: $<span id="originalCost"></span>
+      <br />
+      Discount: <span id="discountApplied"></span>
+      <br />
+      Discounted Room Cost: $<span id="discountedCost"></span>
+      <br />
+      Tax: $<span id="tax"></span>
+      <br />
+      <br />
+      Total Cost: $<span id="totalCost"></span>
+    </form>
+
+    <script src="cost.js"></script>
+  </body>
+</html>
